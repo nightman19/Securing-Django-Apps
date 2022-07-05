@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <h1>Welcome {{user.username}}</h1>
+    <img src="{{ auth0User.extra_data.picture }}" class="img-thumbnail" style="border-radius: 50%; max-width: 200px" />
+    <pre>{{ userdata }}</pre>
+</div>
+{% endblock content %}
